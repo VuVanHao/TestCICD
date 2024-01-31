@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TestCICD</string>
+    <string name="testcicd">Hảo Cute phô mai que test CI/CD!</string>
+</resources>
