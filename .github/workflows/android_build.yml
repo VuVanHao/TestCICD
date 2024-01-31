@@ -25,3 +25,13 @@ jobs:
         with :
           name : TestCICD.apk
           path : app/build/outputs/apk/debug/app-debug.apk
+
+      - name: upload artefact to App Center
+        uses: wzieba/AppCenter-Github-Action@v1.3.4
+        with:
+          appName: haovv/TestCICD
+          token: 8156ad788b78a0a99c563e479f4928bc0500fe5f
+          group: TestAndroid
+          file: app/build/outputs/apk/debug/app-debug.apk
+          notifyTesters: true
+          debug: true
